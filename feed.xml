@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>がしんしおたん</title>
+    <link href="https://rugnight.github.io/rugnight.github.io/feed.xml" rel="self" />
+    <link href="https://rugnight.github.io/rugnight.github.io" />
+    <updated>2024-09-15T12:10:53+09:00</updated>
+    <author>
+        <name>らぐさん</name>
+    </author>
+    <id>https://rugnight.github.io/rugnight.github.io</id>
+
+    <entry>
+        <title>cfilerのプログラム起動メニューで現在のディレクトリを指定する</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://rugnight.github.io/rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html"/>
+        <id>https://rugnight.github.io/rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html</id>
+
+        <updated>2024-09-15T12:10:13+09:00</updated>
+            <summary>
+                <![CDATA[
+                    def command_ProgramMenu(info): # 現在開いているPaneをXnViewで開く def launch_XnView(): print(window.activePane().file_list.getLocation()) shellExecute( None, r&quot;C:\Program Files\XnViewMP\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;) items = [ ( &quot;XnView&quot;, launch_XnView ) ]
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <pre><code class="language-.py">def command_ProgramMenu(info):
+
+# 現在開いているPaneをXnViewで開く
+    def launch_XnView():
+        print(window.activePane().file_list.getLocation())
+        shellExecute( None, r&quot;C:\Program Files\XnViewMP\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;)
+
+    items = [
+        ( &quot;XnView&quot;,    launch_XnView )
+    ]
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
+</feed>
