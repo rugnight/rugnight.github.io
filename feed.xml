@@ -20,7 +20,7 @@
         <updated>2024-09-15T12:10:13+09:00</updated>
             <summary>
                 <![CDATA[
-                    def command_ProgramMenu(info): # 現在開いているPaneをXnViewで開く def launch_XnView(): print(window.activePane().file_list.getLocation()) shellExecute( None, r&quot;C:\Program Files\XnViewMP\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;) items = [ ( &quot;XnView&quot;, launch_XnView ) ]
+                    def command_ProgramMenu(info): # 現在開いているPaneをXnViewで開く def launch_XnView(): print(window.activePane().file_list.getLocation()) shellExecute( None, r&quot;C:\Program Files\XnViewMP\xnviewmp.exe&quot;, &quot;%s&quot;&hellip;
                 ]]>
             </summary>
         <content type="html">
