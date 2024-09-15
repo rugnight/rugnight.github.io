@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://rugnight.github.io/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html",
+            "url": "https://rugnight.github.io/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html",
+            "title": "GitHub Pages独自ドメイン設定のためのDNS設定",
+            "summary": "GitHub Pages サイトのカスタムドメインを管理する ホスト名 TYPE TTL VALUE www.rugnight.net CNAME 3600 rugnight.github.io rugnight.net A 3600 185.199.108.153 rugnight.net A 3600 185.199.109.153 rugnight.net A 3600 185.199.110.153 rugnight.net A&hellip;",
+            "content_html": "<p><a href=\"https://docs.github.com/ja/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site\">GitHub Pages サイトのカスタムドメインを管理する</a></p>\n<table>\n<thead>\n<tr>\n<th class=\"\">ホスト名</th>\n<th>TYPE</th>\n<th>TTL</th>\n<th>VALUE</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td class=\"\">www.rugnight.net</td>\n<td>CNAME</td>\n<td>3600</td>\n<td>rugnight.github.io</td>\n</tr>\n<tr>\n<td>rugnight.net </td>\n<td>A</td>\n<td>3600</td>\n<td>185.199.108.153</td>\n</tr>\n<tr>\n<td>rugnight.net </td>\n<td>A</td>\n<td>3600</td>\n<td>185.199.109.153</td>\n</tr>\n<tr>\n<td>rugnight.net </td>\n<td>A</td>\n<td>3600</td>\n<td>185.199.110.153</td>\n</tr>\n<tr>\n<td>rugnight.net </td>\n<td>A</td>\n<td>3600</td>\n<td>185.199.111.153</td>\n</tr>\n</tbody>\n</table>",
+            "author": {
+                "name": "らぐさん"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-15T19:51:00+09:00",
+            "date_modified": "2024-09-15T19:51:00+09:00"
+        },
+        {
             "id": "https://rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html",
             "url": "https://rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html",
             "title": "cfilerのプログラム起動メニューで現在のディレクトリを指定する",
