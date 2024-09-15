@@ -13,7 +13,7 @@
             "id": "https://rugnight.github.io/rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html",
             "url": "https://rugnight.github.io/rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html",
             "title": "cfilerのプログラム起動メニューで現在のディレクトリを指定する",
-            "summary": "def command_ProgramMenu(info): # 現在開いているPaneをXnViewで開く def launch_XnView(): print(window.activePane().file_list.getLocation()) shellExecute( None, r&quot;C:\\Program Files\\XnViewMP\\xnviewmp.exe&quot;, &quot;%s&quot;&hellip;",
+            "summary": "def command_ProgramMenu(info): # 現在開いているPaneをXnViewで開く def launch_XnView(): print(window.activePane().file_list.getLocation()) shellExecute( None, r&quot;C:\\Program Files\\XnViewMP\\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;) items = [ ( &quot;XnView&quot;,&hellip;",
             "content_html": "<pre><code class=\"language-.py\">def command_ProgramMenu(info):\n\n# 現在開いているPaneをXnViewで開く\n    def launch_XnView():\n        print(window.activePane().file_list.getLocation())\n        shellExecute( None, r&quot;C:\\Program Files\\XnViewMP\\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;)\n\n    items = [\n        ( &quot;XnView&quot;,    launch_XnView )\n    ]\n</code></pre>\n",
             "author": {
                 "name": "らぐさん"
