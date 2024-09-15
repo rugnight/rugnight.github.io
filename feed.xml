@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>がしんしおたん</title>
-    <link href="https://rugnight.github.io/feed.xml" rel="self" />
-    <link href="https://rugnight.github.io" />
+    <link href="https://www.rugnight.net/feed.xml" rel="self" />
+    <link href="https://www.rugnight.net" />
     <updated>2024-09-15T19:51:00+09:00</updated>
     <author>
         <name>らぐさん</name>
     </author>
-    <id>https://rugnight.github.io</id>
+    <id>https://www.rugnight.net</id>
 
     <entry>
         <title>GitHub Pages独自ドメイン設定のためのDNS設定</title>
         <author>
             <name>らぐさん</name>
         </author>
-        <link href="https://rugnight.github.io/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html"/>
-        <id>https://rugnight.github.io/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html</id>
+        <link href="https://www.rugnight.net/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html"/>
+        <id>https://www.rugnight.net/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html</id>
 
         <updated>2024-09-15T19:51:00+09:00</updated>
             <summary>
@@ -76,8 +76,8 @@
         <author>
             <name>らぐさん</name>
         </author>
-        <link href="https://rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html"/>
-        <id>https://rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html</id>
+        <link href="https://www.rugnight.net/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html"/>
+        <id>https://www.rugnight.net/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html</id>
             <category term="cfiler"/>
 
         <updated>2024-09-15T12:10:13+09:00</updated>

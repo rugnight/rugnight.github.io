@@ -2,17 +2,17 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "がしんしおたん",
     "description": "",
-    "home_page_url": "https://rugnight.github.io",
-    "feed_url": "https://rugnight.github.io/feed.json",
+    "home_page_url": "https://www.rugnight.net",
+    "feed_url": "https://www.rugnight.net/feed.json",
     "user_comment": "",
-    "icon": "https://rugnight.github.io/media/website/keycap-cdc8b0.gif",
+    "icon": "https://www.rugnight.net/media/website/keycap-cdc8b0.gif",
     "author": {
         "name": "らぐさん"
     },
     "items": [
         {
-            "id": "https://rugnight.github.io/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html",
-            "url": "https://rugnight.github.io/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html",
+            "id": "https://www.rugnight.net/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html",
+            "url": "https://www.rugnight.net/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html",
             "title": "GitHub Pages独自ドメイン設定のためのDNS設定",
             "summary": "GitHub Pages サイトのカスタムドメインを管理する ホスト名 TYPE TTL VALUE www.rugnight.net CNAME 3600 rugnight.github.io rugnight.net A 3600 185.199.108.153 rugnight.net A 3600 185.199.109.153 rugnight.net A 3600 185.199.110.153 rugnight.net A&hellip;",
             "content_html": "<p><a href=\"https://docs.github.com/ja/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site\">GitHub Pages サイトのカスタムドメインを管理する</a></p>\n<table>\n<thead>\n<tr>\n<th class=\"\">ホスト名</th>\n<th>TYPE</th>\n<th>TTL</th>\n<th>VALUE</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td class=\"\">www.rugnight.net</td>\n<td>CNAME</td>\n<td>3600</td>\n<td>rugnight.github.io</td>\n</tr>\n<tr>\n<td>rugnight.net </td>\n<td>A</td>\n<td>3600</td>\n<td>185.199.108.153</td>\n</tr>\n<tr>\n<td>rugnight.net </td>\n<td>A</td>\n<td>3600</td>\n<td>185.199.109.153</td>\n</tr>\n<tr>\n<td>rugnight.net </td>\n<td>A</td>\n<td>3600</td>\n<td>185.199.110.153</td>\n</tr>\n<tr>\n<td>rugnight.net </td>\n<td>A</td>\n<td>3600</td>\n<td>185.199.111.153</td>\n</tr>\n</tbody>\n</table>",
@@ -25,8 +25,8 @@
             "date_modified": "2024-09-15T19:51:00+09:00"
         },
         {
-            "id": "https://rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html",
-            "url": "https://rugnight.github.io/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html",
+            "id": "https://www.rugnight.net/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html",
+            "url": "https://www.rugnight.net/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html",
             "title": "cfilerのプログラム起動メニューで現在のディレクトリを指定する",
             "summary": "def command_ProgramMenu(info): # 現在開いているPaneをXnViewで開く def launch_XnView(): print(window.activePane().file_list.getLocation()) shellExecute( None, r&quot;C:\\Program Files\\XnViewMP\\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;) items = [ ( &quot;XnView&quot;, launch_XnView ) ]",
             "content_html": "<pre><code class=\"language-.py\">def command_ProgramMenu(info):\n\n# 現在開いているPaneをXnViewで開く\n    def launch_XnView():\n        print(window.activePane().file_list.getLocation())\n        shellExecute( None, r&quot;C:\\Program Files\\XnViewMP\\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;)\n\n    items = [\n        ( &quot;XnView&quot;,    launch_XnView )\n    ]\n</code></pre>\n",
