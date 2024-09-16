@@ -3,7 +3,7 @@
     <title>がしんしおたん</title>
     <link href="https://www.rugnight.net/feed.xml" rel="self" />
     <link href="https://www.rugnight.net" />
-    <updated>2024-09-17T01:37:38+09:00</updated>
+    <updated>2024-09-17T01:43:35+09:00</updated>
     <author>
         <name>らぐさん</name>
     </author>
@@ -20,14 +20,16 @@
         <updated>2024-09-17T01:34:37+09:00</updated>
             <summary>
                 <![CDATA[
-                    Custom Context Menu
+                    Custom Context Menu 選択ファイルを引数に実行ファイルへ渡すように設定する。 送るメニュー（名称変更可）から実行できるようになる。
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p><a href="https://apps.microsoft.com/detail/9pc7bzz28g0x?hl=ja-JP&amp;gl=JP" target="_blank" rel="noopener noreferrer">Custom Context Menu</a></p>
+<p>選択ファイルを引数に実行ファイルへ渡すように設定する。</p>
 <figure class="post__image"><img loading="lazy"  src="https://www.rugnight.net/media/posts/4/240917_0127_ApplicationFrameHost_Bcbq0vK2lv.png" alt="" width="1556" height="1128" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://www.rugnight.net/media/posts/4/responsive/240917_0127_ApplicationFrameHost_Bcbq0vK2lv-xs.png 300w ,https://www.rugnight.net/media/posts/4/responsive/240917_0127_ApplicationFrameHost_Bcbq0vK2lv-sm.png 480w ,https://www.rugnight.net/media/posts/4/responsive/240917_0127_ApplicationFrameHost_Bcbq0vK2lv-md.png 768w ,https://www.rugnight.net/media/posts/4/responsive/240917_0127_ApplicationFrameHost_Bcbq0vK2lv-lg.png 1024w"></figure>
-<figure class="post__image"><img loading="lazy"  src="https://www.rugnight.net/media/posts/4/240917_0128_explorer_wPrZ0u2mn8.png" alt="" width="1036" height="1097" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://www.rugnight.net/media/posts/4/responsive/240917_0128_explorer_wPrZ0u2mn8-xs.png 300w ,https://www.rugnight.net/media/posts/4/responsive/240917_0128_explorer_wPrZ0u2mn8-sm.png 480w ,https://www.rugnight.net/media/posts/4/responsive/240917_0128_explorer_wPrZ0u2mn8-md.png 768w ,https://www.rugnight.net/media/posts/4/responsive/240917_0128_explorer_wPrZ0u2mn8-lg.png 1024w"></figure>
+<p>送るメニュー（名称変更可）から実行できるようになる。</p>
+<figure class="post__image"><img loading="lazy"  src="https://www.rugnight.net/media/posts/4/240917_0141_ZM139n5hd5.png" alt="" width="1036" height="1097" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://www.rugnight.net/media/posts/4/responsive/240917_0141_ZM139n5hd5-xs.png 300w ,https://www.rugnight.net/media/posts/4/responsive/240917_0141_ZM139n5hd5-sm.png 480w ,https://www.rugnight.net/media/posts/4/responsive/240917_0141_ZM139n5hd5-md.png 768w ,https://www.rugnight.net/media/posts/4/responsive/240917_0141_ZM139n5hd5-lg.png 1024w"></figure>
             ]]>
         </content>
     </entry>
