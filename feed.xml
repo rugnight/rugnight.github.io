@@ -3,12 +3,33 @@
     <title>がしんしおたん</title>
     <link href="https://www.rugnight.net/feed.xml" rel="self" />
     <link href="https://www.rugnight.net" />
-    <updated>2024-09-15T19:51:00+09:00</updated>
+    <updated>2024-09-17T01:34:37+09:00</updated>
     <author>
         <name>らぐさん</name>
     </author>
     <id>https://www.rugnight.net</id>
 
+    <entry>
+        <title>Windows11の右クリックメニューに好きな処理を追加できる Custom Context Menu</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://www.rugnight.net/windows11noyou-kuritukumeniyunihao-kinachu-li-wozhui-jia-dekiru-custom-context-menu.html"/>
+        <id>https://www.rugnight.net/windows11noyou-kuritukumeniyunihao-kinachu-li-wozhui-jia-dekiru-custom-context-menu.html</id>
+
+        <updated>2024-09-17T01:34:37+09:00</updated>
+            <summary>
+                <![CDATA[
+                    Custom Context Menu
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><a href="https://apps.microsoft.com/detail/9pc7bzz28g0x?hl=ja-JP&amp;gl=JP" target="_blank" rel="noopener noreferrer">Custom Context Menu</a></p>
+<figure class="post__image"><img loading="lazy"  src="https://www.rugnight.net/media/posts/4/240917_0130_lEu6oMYnYC.png" alt="" width="2592" height="1128" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://www.rugnight.net/media/posts/4/responsive/240917_0130_lEu6oMYnYC-xs.png 300w ,https://www.rugnight.net/media/posts/4/responsive/240917_0130_lEu6oMYnYC-sm.png 480w ,https://www.rugnight.net/media/posts/4/responsive/240917_0130_lEu6oMYnYC-md.png 768w ,https://www.rugnight.net/media/posts/4/responsive/240917_0130_lEu6oMYnYC-lg.png 1024w"></figure>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>GitHub Pages独自ドメイン設定のためのDNS設定</title>
         <author>
