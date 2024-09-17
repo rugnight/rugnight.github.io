@@ -3,7 +3,7 @@
     <title>がしんしおたん</title>
     <link href="https://www.rugnight.net/feed.xml" rel="self" />
     <link href="https://www.rugnight.net" />
-    <updated>2024-09-17T22:45:16+09:00</updated>
+    <updated>2024-09-17T22:47:59+09:00</updated>
     <author>
         <name>らぐさん</name>
     </author>
@@ -16,6 +16,8 @@
         </author>
         <link href="https://www.rugnight.net/publiidegoogle-analyticswoshi-u.html"/>
         <id>https://www.rugnight.net/publiidegoogle-analyticswoshi-u.html</id>
+            <category term="ブログ"/>
+            <category term="Publii"/>
 
         <updated>2024-09-17T22:33:10+09:00</updated>
             <summary>
@@ -43,6 +45,7 @@
         </author>
         <link href="https://www.rugnight.net/windows11noyou-kuritukumeniyunihao-kinachu-li-wozhui-jia-dekiru-custom-context-menu.html"/>
         <id>https://www.rugnight.net/windows11noyou-kuritukumeniyunihao-kinachu-li-wozhui-jia-dekiru-custom-context-menu.html</id>
+            <category term="Windows"/>
 
         <updated>2024-09-17T01:34:37+09:00</updated>
             <summary>
@@ -67,6 +70,7 @@
         </author>
         <link href="https://www.rugnight.net/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html"/>
         <id>https://www.rugnight.net/github-pagesdu-zi-domeinshe-ding-notamenodnsshe-ding.html</id>
+            <category term="ブログ"/>
 
         <updated>2024-09-15T19:51:00+09:00</updated>
             <summary>
