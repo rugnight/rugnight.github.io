@@ -3,12 +3,276 @@
     <title>がしんしおたん</title>
     <link href="https://www.rugnight.net/feed.xml" rel="self" />
     <link href="https://www.rugnight.net" />
-    <updated>2024-09-17T22:47:59+09:00</updated>
+    <updated>2024-09-27T20:12:47+09:00</updated>
     <author>
         <name>らぐさん</name>
     </author>
     <id>https://www.rugnight.net</id>
 
+    <entry>
+        <title>[UE/C++]Cast</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://www.rugnight.net/ueccast.html"/>
+        <id>https://www.rugnight.net/ueccast.html</id>
+            <category term="UnrealEngine"/>
+
+        <updated>2024-09-27T20:12:47+09:00</updated>
+            <summary>
+                <![CDATA[
+                    AHogeActor* hogeActor; // 通常のキャスト hogeActor = Cast&lt;AHogeActor&gt;(actor); // nullが返る場合はエラーを吐いて停止させる hogeActor = CastChecked&lt;AHogeActor&gt;(actor);
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <pre><code class="language-.cpp">AHogeActor* hogeActor;
+
+// 通常のキャスト
+hogeActor = Cast&lt;AHogeActor&gt;(actor);
+
+// nullが返る場合はエラーを吐いて停止させる
+hogeActor = CastChecked&lt;AHogeActor&gt;(actor);
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>[UE/C++]EnhancedInputをC+＋で扱う</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://www.rugnight.net/uecenhancedinputwocdexi-u.html"/>
+        <id>https://www.rugnight.net/uecenhancedinputwocdexi-u.html</id>
+            <category term="UnrealEngine"/>
+
+        <updated>2024-09-27T20:09:37+09:00</updated>
+            <summary>
+                <![CDATA[
+                    #pragma once #include &quot;CoreMinimal.h&quot; #include &quot;GameFramework/Character.h&quot; #include &quot;HogePawn.generated.h&quot; UCLASS() class CRICKET_API AHogePawn : public ACharacter { GENERATED_BODY() private: // 入力セットアップ時に呼ばれる virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <pre><code class="language-.cpp">#pragma once
+  
+#include &quot;CoreMinimal.h&quot;
+#include &quot;GameFramework/Character.h&quot;
+#include &quot;HogePawn.generated.h&quot;
+  
+UCLASS()
+class CRICKET_API AHogePawn : public ACharacter
+{
+ GENERATED_BODY()
+  
+private:
+ // 入力セットアップ時に呼ばれる
+ virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+  
+ // Bindする関数
+ void OnInvokedAttackAction(const struct FInputActionInstance&amp; Instance);
+  
+public:
+ // BPから指定する入力アクション、BPからアセットを指定する
+ UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = &quot;Input&quot;)
+ const class UInputAction* InputAction;
+};
+  
+</code></pre>
+<pre><code class="language-.cpp">#include &quot;HogePawn.h&quot;
+#include &quot;InputTriggers.h&quot;
+#include &quot;InputAction.h&quot;
+#include &quot;EnhancedInputComponent.h&quot;
+  
+void AHogePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+ Super::SetupPlayerInputComponent(PlayerInputComponent);
+  
+ // EnhancedInputへキャスト
+ UEnhancedInputComponent* Input = Cast&lt;UEnhancedInputComponent&gt;(PlayerInputComponent);
+ 
+ // アクションに関数をバインド
+ Input-&gt;BindAction(InputAction, ETriggerEvent::Triggered, this, &amp;AHogePawn::OnInvokedAttackAction);
+}
+  
+  
+void AHogePawn::OnInvokedAttackAction(const FInputActionInstance&amp; Instance)
+{
+     // 入力アクションの値を取得したり
+     FVector VectorValue = Instance.GetValue().Get&lt;FVector&gt;();
+     float FloatValue = Instance.GetValue().Get&lt;float&gt;();
+     bool BoolValue = Instance.GetValue().Get&lt;bool&gt;();
+
+     //  ここで具体的な処理
+     GEngine-&gt;AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, &quot;Input&quot;);
+}
+  
+</code></pre>
+<h2 id="参考">参考</h2>
+<p><a href="https://qiita.com/unknown_ds/items/23997301e0e8952d436c">UE5 Enhanced Input についてのメモ</a>
+<a href="https://dev.epicgames.com/documentation/ja-jp/unreal-engine/enhanced-input-in-unreal-engine">Enhanced Input</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>[UE/C++]あのヘッダは何処</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://www.rugnight.net/uecanohetudahahe-chu.html"/>
+        <id>https://www.rugnight.net/uecanohetudahahe-chu.html</id>
+            <category term="UnrealEngine"/>
+
+        <updated>2024-09-27T20:06:15+09:00</updated>
+            <summary>
+                <![CDATA[
+                    CharacterMovementComponent #include &quot;GameFramework/CharacterMovementComponent.h&quot; 数学ライブラリ #include &quot;Kismet/KismetMathLibrary.h&quot;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="charactermovementcomponent">CharacterMovementComponent</h2>
+<pre><code class="language-.cpp">#include &quot;GameFramework/CharacterMovementComponent.h&quot;
+</code></pre>
+<h2 id="数学ライブラリ">数学ライブラリ</h2>
+<pre><code class="language-.cpp">#include &quot;Kismet/KismetMathLibrary.h&quot;
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>[UE/C++]あるある対処帳</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://www.rugnight.net/uecaruarudui-chu-zhang.html"/>
+        <id>https://www.rugnight.net/uecaruarudui-chu-zhang.html</id>
+            <category term="UnrealEngine"/>
+
+        <updated>2024-09-27T20:04:52+09:00</updated>
+            <summary>
+                <![CDATA[
+                    includeファイルが見つからない NiagaraやAIModuleなど普通に使えそうなものも追加しないと参照できない using UnrealBuildTool; public class Hoge : ModuleRules { public Cricket(ReadOnlyTargetRules Target) : base(Target) { PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs; // ここに追加する PublicDependencyModuleNames.AddRange(new string[] { &quot;Core&quot;,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="includeファイルが見つからない">includeファイルが見つからない</h2>
+<p>NiagaraやAIModuleなど普通に使えそうなものも追加しないと参照できない</p><pre><code class="language-.cpp">using UnrealBuildTool;
+
+public class Hoge : ModuleRules
+{
+    public Cricket(ReadOnlyTargetRules Target) : base(Target)
+    {
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+    
+                // ここに追加する
+        PublicDependencyModuleNames.AddRange(new string[] { 
+                &quot;Core&quot;,
+                &quot;CoreUObject&quot;,
+                &quot;Engine&quot;,
+                &quot;InputCore&quot;,
+                &quot;EnhancedInput&quot;,
+                &quot;ImGui&quot; 
+                });
+
+            （中略）
+
+}
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>[UE/C++]各種ログ</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://www.rugnight.net/uecge-zhong-rogu.html"/>
+        <id>https://www.rugnight.net/uecge-zhong-rogu.html</id>
+            <category term="UnrealEngine"/>
+
+        <updated>2024-09-27T20:00:45+09:00</updated>
+            <summary>
+                <![CDATA[
+                    UEngine::AddOnScreenDebugMessage BPのPrintString同様ゲーム画面に出力する GEngine-&gt;AddOnScreenDebugMessage(-1, 8.f, FColor::Cyan, TEXT(&quot;Hoge&quot;)); 参考 UEngine::AddOnScreenDebugMessage PrintString（GEngine-&gt;AddOnScreenDebugMessageとUE_LOG）
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="uengineaddonscreendebugmessage">UEngine::AddOnScreenDebugMessage</h2>
+<p>BPのPrintString同様ゲーム画面に出力する</p><pre><code class="language-.cpp">GEngine-&gt;AddOnScreenDebugMessage(-1, 8.f, FColor::Cyan, TEXT(&quot;Hoge&quot;));
+</code></pre>
+<h2 id="参考">参考</h2>
+<p><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine/Engine/UEngine/AddOnScreenDebugMessage/1?application_version=5.4">UEngine::AddOnScreenDebugMessage</a>
+<a href="https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_a0103_ue_log_debug_message">PrintString（GEngine-&gt;AddOnScreenDebugMessageとUE_LOG）</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>[UE/C++]コーディング規約抜書</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://www.rugnight.net/ueckodeingugui-yue-ba-shu.html"/>
+        <id>https://www.rugnight.net/ueckodeingugui-yue-ba-shu.html</id>
+            <category term="UnrealEngine"/>
+
+        <updated>2024-09-27T19:58:00+09:00</updated>
+            <summary>
+                <![CDATA[
+                    変数名 float TeaWeight; int32 TeaCount; bool bDoesTeaStink; FName TeaName; FString TeaFriendlyName; UClass* TeaClass; USoundCue* TeaSound; UTexture* TeaTexture; 参考 コーディング規約
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="変数名">変数名</h2>
+<pre><code class="language-.cpp">float TeaWeight;
+int32 TeaCount;
+bool bDoesTeaStink;
+
+FName TeaName;
+FString TeaFriendlyName;
+
+UClass* TeaClass;
+USoundCue* TeaSound;
+UTexture* TeaTexture;
+</code></pre>
+<h2 id="参考">参考</h2>
+<p><a href="https://dev.epicgames.com/documentation/ja-jp/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine">コーディング規約</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>[UE/C++]TArrayの条件付きソート</title>
+        <author>
+            <name>らぐさん</name>
+        </author>
+        <link href="https://www.rugnight.net/uectarraynotiao-jian-fu-kisoto.html"/>
+        <id>https://www.rugnight.net/uectarraynotiao-jian-fu-kisoto.html</id>
+            <category term="UnrealEngine"/>
+
+        <updated>2024-09-27T19:52:44+09:00</updated>
+            <summary>
+                <![CDATA[
+                    TArray&lt;USceneComponent*&gt; array; array.Sort([](const AActor&amp; p1, const AActor&amp; p2) { return p1.GetActorGuid() &lt; p2.GetActorGuid(); }); 参考 How to sort TArray in c++?
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <pre><code class="language-.cpp">TArray&lt;USceneComponent*&gt; array;
+array.Sort([](const AActor&amp; p1, const AActor&amp; p2) {
+    return  p1.GetActorGuid() &lt; p2.GetActorGuid();
+});
+</code></pre>
+<h2 id="参考">参考</h2>
+<p><a href="https://forums.unrealengine.com/t/how-to-sort-tarray-in-c/465585">How to sort TArray in c++?</a></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>PubliiでGoogle Analyticsを使う</title>
         <author>
@@ -123,38 +387,6 @@
 </tr>
 </tbody>
 </table>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>cfilerのプログラム起動メニューで現在のディレクトリを指定する</title>
-        <author>
-            <name>らぐさん</name>
-        </author>
-        <link href="https://www.rugnight.net/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html"/>
-        <id>https://www.rugnight.net/cfilernopuroguramuqi-dong-meniyudexian-zai-nodeirekutoriwozhi-ding-suru.html</id>
-            <category term="cfiler"/>
-
-        <updated>2024-09-15T12:10:13+09:00</updated>
-            <summary>
-                <![CDATA[
-                    def command_ProgramMenu(info): # 現在開いているPaneをXnViewで開く def launch_XnView(): print(window.activePane().file_list.getLocation()) shellExecute( None, r&quot;C:\Program Files\XnViewMP\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;) items = [ ( &quot;XnView&quot;, launch_XnView ) ]
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <pre><code class="language-.py">def command_ProgramMenu(info):
-
-# 現在開いているPaneをXnViewで開く
-    def launch_XnView():
-        print(window.activePane().file_list.getLocation())
-        shellExecute( None, r&quot;C:\Program Files\XnViewMP\xnviewmp.exe&quot;, &quot;%s&quot; % window.activePane().file_list.getLocation(), &quot;&quot;)
-
-    items = [
-        ( &quot;XnView&quot;,    launch_XnView )
-    ]
-</code></pre>
-
             ]]>
         </content>
     </entry>
