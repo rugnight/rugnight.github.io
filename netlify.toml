@@ -1,0 +1,3 @@
+[build]
+command = "hugo --theme=mainroad --buildDrafts --gc --minify"
+publish = "public"

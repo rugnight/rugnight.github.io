@@ -1,0 +1,107 @@
+# ビルド時のデフォルト言語指定
+DefaultContentLanguage = "ja"
+
+# 公開するページの言語指定
+languageCode = "ja-jp"
+
+baseURL = "http://www.rugnight.net"
+
+title = "がしんしおたん"
+
+author = "rugnight"
+
+# --------------------------------------------------
+# mainroad
+theme = "terminal"
+
+[Author] # Used in authorbox
+avatar = ""
+bio = ""
+name = "rugnight"
+
+[menu]
+[[menu.main]]
+name = "トップ"
+pre = "<i class='fa fa-road'></i>"
+url = "/"
+weight = -200
+[[menu.main]]
+name = "雑記"
+pre = "<i class='fa fa-road'></i>"
+url = "/misc/"
+weight = -90
+[[menu.main]]
+name = "レシピ"
+pre = "<i class='fa fa-road'></i>"
+url = "/recipe/"
+weight = -90
+[[menu.main]]
+name = "技術メモ"
+pre = "<i class='fa fa-road'></i>"
+url = "/tech/"
+weight = -90
+[[menu.main]]
+name = "辞典"
+pre = "<i class='fa fa-road'></i>"
+url = "/dict/"
+weight = -90
+[[menu.main]]
+name = "タグ"
+pre = "<i class='fa fa-road'></i>"
+url = "/tags/"
+weight = -80
+#[[menu.main]]
+#  identifier = "page"
+#  name = "ページ"
+#  pre = "<i class='fa fa-heart'></i>"
+#  url = "/page/"
+#  weight = -90
+
+[Params]
+subtitle = "人の一生は重荷を負うて遠き道を行くがごとし。急ぐべからず。"
+# description = "自分の備忘用の情報です"
+copyright = "rugnight" # copyright holder, otherwise will use site title
+authorbox = false # Show authorbox at bottom of pages if true
+dateformat = "2006-01-02" # change the format of dates
+#mainSections = ["post", "page", "news"] # specify section pages to show on home page and the "Recent articles" widget               
+opengraph = true # Enable OpenGraph if true
+post_meta = ["date", "categories", "translations"] # Order of post meta information               
+post_navigation = true # Show post navigation at bottom of pages if true
+readmore = false # Show "Read more" button in list if true
+toc = true # Enable Table of Contents
+twitter_cards = true # Enable Twitter Cards if true
+#mathjax = true # Enable MathJax
+#mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
+#mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+customCSS = ["css/custom.css"] # Include custom CSS files
+customJS = ["js/custom.js"]
+
+[Params.sidebar]
+home = "right" # Configure layout for home page
+list = "right" # Configure layout for list pages
+single = true # Configure layout for single pages
+# Enable widgets in given order
+#widgets = ["search", "twitter", "recent", "categories", "taglist", "social", "languages"]
+widgets = ["social", "twitter", "recent", "taglist", "search", "languages"]
+
+[Params.widgets]
+recent_num = 5 # Set the number of articles in the "Recent articles" widget
+tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[Params.widgets.social]
+# Enable parts of social widget
+#facebook = "username"
+instagram = "rugnight"
+twitter = "rugnight"
+#linkedin = "username"
+#telegram = "username"
+github = "rugnight"
+#gitlab = "username"
+#bitbucket = "username"
+#email = "example@example.com"
+
+# Custom social links
+[[Params.widgets.social.custom]]
+#icon = "svg/spotify.svg"
+title = "Spotify"
+url = "https://open.spotify.com/user/rugnight?si=RvLWTIpFR_m6_ygjAic7jg"

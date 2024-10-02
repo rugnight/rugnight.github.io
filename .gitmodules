@@ -1,0 +1,9 @@
+[submodule "themes/sada"]
+	path = themes/sada
+	url = https://github.com/darshanbaral/sada.git
+[submodule "themes/code-editor"]
+	path = themes/code-editor
+	url = https://github.com/aubm/hugo-code-editor-theme.git
+[submodule "themes/mainroad"]
+	path = themes/mainroad
+	url = https://github.com/vimux/mainroad.git

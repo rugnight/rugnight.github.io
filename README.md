@@ -1,0 +1,3 @@
+# がしんしおたん
+
+hugo new post/
