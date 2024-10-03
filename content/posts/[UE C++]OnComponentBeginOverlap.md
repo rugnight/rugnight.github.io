@@ -9,7 +9,11 @@ thumbnail: ""
 ```cpp
 
 // .h
+// UFUNCTION() をつけないとコールされないので注意
+UFUNCTION()
 void OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+UFUNCTION()
 void OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 // .cpp
