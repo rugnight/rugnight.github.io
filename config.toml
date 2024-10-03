@@ -10,14 +10,60 @@ title = "がしんしおたん"
 
 author = "rugnight"
 
-# --------------------------------------------------
-# mainroad
 theme = "terminal"
+paginate = 5
 
 [Author] # Used in authorbox
 avatar = ""
 bio = ""
 name = "rugnight"
+
+[params]
+  title = "がしんしおたん"
+
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = true
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # whether to show a page's estimated reading time
+  # readingTime = false # default
+
+  # whether to show a table of contents
+  # can be overridden in a page's front-matter
+  # Toc = false # default
+
+  # set title for the table of contents
+  # can be overridden in a page's front-matter
+  # TocTitle = "Table of Contents" # default
+
+  readmore = "Read More"
+
+[params.logo]
+  logoText = "がしんしおたん"
 
 [menu]
 [[menu.main]]
@@ -57,51 +103,51 @@ weight = -80
 #  url = "/page/"
 #  weight = -90
 
-[Params]
-subtitle = "人の一生は重荷を負うて遠き道を行くがごとし。急ぐべからず。"
-# description = "自分の備忘用の情報です"
-copyright = "rugnight" # copyright holder, otherwise will use site title
-authorbox = false # Show authorbox at bottom of pages if true
-dateformat = "2006-01-02" # change the format of dates
-#mainSections = ["post", "page", "news"] # specify section pages to show on home page and the "Recent articles" widget               
-opengraph = true # Enable OpenGraph if true
-post_meta = ["date", "categories", "translations"] # Order of post meta information               
-post_navigation = true # Show post navigation at bottom of pages if true
-readmore = false # Show "Read more" button in list if true
-toc = true # Enable Table of Contents
-twitter_cards = true # Enable Twitter Cards if true
-#mathjax = true # Enable MathJax
-#mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
-#mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-customCSS = ["css/custom.css"] # Include custom CSS files
-customJS = ["js/custom.js"]
+#[Params]
+#subtitle = "人の一生は重荷を負うて遠き道を行くがごとし。急ぐべからず。"
+## description = "自分の備忘用の情報です"
+#copyright = "rugnight" # copyright holder, otherwise will use site title
+#authorbox = false # Show authorbox at bottom of pages if true
+#dateformat = "2006-01-02" # change the format of dates
+##mainSections = ["post", "page", "news"] # specify section pages to show on home page and the "Recent articles" widget               
+#opengraph = true # Enable OpenGraph if true
+#post_meta = ["date", "categories", "translations"] # Order of post meta information               
+#post_navigation = true # Show post navigation at bottom of pages if true
+#readmore = false # Show "Read more" button in list if true
+#toc = true # Enable Table of Contents
+#twitter_cards = true # Enable Twitter Cards if true
+##mathjax = true # Enable MathJax
+##mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
+##mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+#customCSS = ["css/custom.css"] # Include custom CSS files
+#customJS = ["js/custom.js"]
 
-[Params.sidebar]
-home = "right" # Configure layout for home page
-list = "right" # Configure layout for list pages
-single = true # Configure layout for single pages
-# Enable widgets in given order
-#widgets = ["search", "twitter", "recent", "categories", "taglist", "social", "languages"]
-widgets = ["social", "twitter", "recent", "taglist", "search", "languages"]
-
-[Params.widgets]
-recent_num = 5 # Set the number of articles in the "Recent articles" widget
-tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
-
-[Params.widgets.social]
-# Enable parts of social widget
-#facebook = "username"
-instagram = "rugnight"
-twitter = "rugnight"
-#linkedin = "username"
-#telegram = "username"
-github = "rugnight"
-#gitlab = "username"
-#bitbucket = "username"
-#email = "example@example.com"
-
-# Custom social links
-[[Params.widgets.social.custom]]
-#icon = "svg/spotify.svg"
-title = "Spotify"
-url = "https://open.spotify.com/user/rugnight?si=RvLWTIpFR_m6_ygjAic7jg"
+#[Params.sidebar]
+#home = "right" # Configure layout for home page
+#list = "right" # Configure layout for list pages
+#single = true # Configure layout for single pages
+## Enable widgets in given order
+##widgets = ["search", "twitter", "recent", "categories", "taglist", "social", "languages"]
+#widgets = ["social", "twitter", "recent", "taglist", "search", "languages"]
+#
+#[Params.widgets]
+#recent_num = 5 # Set the number of articles in the "Recent articles" widget
+#tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+#
+#[Params.widgets.social]
+## Enable parts of social widget
+##facebook = "username"
+#instagram = "rugnight"
+#twitter = "rugnight"
+##linkedin = "username"
+##telegram = "username"
+#github = "rugnight"
+##gitlab = "username"
+##bitbucket = "username"
+##email = "example@example.com"
+#
+## Custom social links
+#[[Params.widgets.social.custom]]
+##icon = "svg/spotify.svg"
+#title = "Spotify"
+#url = "https://open.spotify.com/user/rugnight?si=RvLWTIpFR_m6_ygjAic7jg"
