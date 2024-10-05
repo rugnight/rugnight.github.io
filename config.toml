@@ -19,51 +19,58 @@ bio = ""
 name = "rugnight"
 
 [params]
-  title = "がしんしおたん"
+title = "がしんしおたん"
 
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+# dir name of your main content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+contentTypeName = "posts"
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 5
 
-  # show selector to switch language
-  showLanguageSelector = false
+# show selector to switch language
+showLanguageSelector = false
 
-  # set theme to full screen width
-  fullWidthTheme = false
+# set theme to full screen width
+fullWidthTheme = false
 
-  # center theme with default width
-  centerTheme = true
+# center theme with default width
+centerTheme = true
 
-  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
-  # then the file will be used as a cover automatically.
-  # With this option you don't have to put the `cover` param in a front-matter.
-  autoCover = true
+# if your resource directory contains an image called `cover.(jpg|png|webp)`,
+# then the file will be used as a cover automatically.
+# With this option you don't have to put the `cover` param in a front-matter.
+autoCover = true
 
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
+# set post to show the last updated
+# If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+showLastUpdated = false
 
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
+# Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+# updatedDatePrefix = "Updated"
 
-  # whether to show a page's estimated reading time
-  # readingTime = false # default
+# whether to show a page's estimated reading time
+# readingTime = false # default
 
-  # whether to show a table of contents
-  # can be overridden in a page's front-matter
-  # Toc = false # default
+# whether to show a table of contents
+# can be overridden in a page's front-matter
+# Toc = false # default
 
-  # set title for the table of contents
-  # can be overridden in a page's front-matter
-  # TocTitle = "Table of Contents" # default
+# set title for the table of contents
+# can be overridden in a page's front-matter
+# TocTitle = "Table of Contents" # default
 
-  readmore = "Read More"
+readmore = "Read More"
+
+favicon = "favicon.png"
 
 [params.logo]
-  logoText = "がしんしおたん"
+logoText = "がしんしおたん"
+
+[params.twitter]
+creator = "rugnight"
+site = ""
+
 
 [menu]
 [[menu.main]]
@@ -71,37 +78,11 @@ name = "トップ"
 pre = "<i class='fa fa-road'></i>"
 url = "/"
 weight = -200
-[[menu.main]]
-name = "雑記"
-pre = "<i class='fa fa-road'></i>"
-url = "/misc/"
-weight = -90
-[[menu.main]]
-name = "レシピ"
-pre = "<i class='fa fa-road'></i>"
-url = "/recipe/"
-weight = -90
-[[menu.main]]
-name = "技術メモ"
-pre = "<i class='fa fa-road'></i>"
-url = "/tech/"
-weight = -90
-[[menu.main]]
-name = "辞典"
-pre = "<i class='fa fa-road'></i>"
-url = "/dict/"
-weight = -90
-[[menu.main]]
-name = "タグ"
-pre = "<i class='fa fa-road'></i>"
-url = "/tags/"
-weight = -80
 #[[menu.main]]
-#  identifier = "page"
-#  name = "ページ"
-#  pre = "<i class='fa fa-heart'></i>"
-#  url = "/page/"
-#  weight = -90
+#name = "雑記"
+#pre = "<i class='fa fa-road'></i>"
+#url = "/misc/"
+#weight = -90
 
 #[Params]
 #subtitle = "人の一生は重荷を負うて遠き道を行くがごとし。急ぐべからず。"
