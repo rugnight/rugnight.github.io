@@ -4,7 +4,7 @@ date = "2024-10-03T17:39:42+09:00"
 author = ""
 authorTwitter = "" #do not include @
 cover = ""
-tags = ["UnrealEngine", ""]
+tags = ["UnrealEngine"]
 keywords = ["", ""]
 description = ""
 showFullContent = false
@@ -12,12 +12,11 @@ readingTime = false
 hideComments = false
 +++
 
-
 ## GameInstanceSubsystem
 
 ゲームの開始と終了にあわせて生成・破棄される。
 
-コード例はTick処理を実装するために、FTickableGameObjectを継承している。
+コード例は Tick 処理を実装するために、FTickableGameObject を継承している。
 
 ```cpp
 #pragma once
@@ -28,7 +27,7 @@ hideComments = false
 #include "CBDebugGuiSubsystem.generated.h"
 
 UCLASS()
-class UE_SP_SHADERTEMP_API UCBDebugGuiSubsystem 
+class UE_SP_SHADERTEMP_API UCBDebugGuiSubsystem
     : public UGameInstanceSubsystem
     , public FTickableGameObject
 {
@@ -45,7 +44,7 @@ public:
  // ==================================================
  // For FTickableGameObject
  // ==================================================
- 
+
  // 初期化の完了を待ってTickを動かすようにしないと初期数フレームで重複してTickが呼ばれてしまうのに対処
  virtual bool IsTickable() const override { return bIsInitialized; }
 
@@ -93,6 +92,6 @@ void UCBDebugGuiSubsystem::Tick(float DeltaTime)
 }
 ```
 
-----
+---
 
 [UE4 プログラミングサブシステムを試してみる](https://qiita.com/unknown_ds/items/afcff802ab17db486822)
