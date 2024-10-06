@@ -91,7 +91,7 @@ pre {
   color: var(--accent);
   border: 1px solid var(--accent);
   border-bottom: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding: 3px 10px;
 }
 
