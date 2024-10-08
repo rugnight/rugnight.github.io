@@ -13,10 +13,16 @@ author = "rugnight"
 theme = "terminal"
 paginate = 5
 
+# サマリーの単語区切りを全角文字対応
+hasCJKLanguage = true
+summaryLength = 20
+
 [Author] # Used in authorbox
 avatar = ""
 bio = ""
 name = "rugnight"
+
+
 
 [params]
 title = "がしんしおたん"
