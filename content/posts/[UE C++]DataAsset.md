@@ -1,15 +1,7 @@
 +++
 title = "[UE C++]DataAsset"
 date = "2024-10-04T11:04:58+09:00"
-author = ""
-authorTwitter = "" #do not include @
-cover = ""
 tags = ["UnrealEngine", ]
-keywords = ["", ""]
-description = ""
-showFullContent = false
-readingTime = false
-hideComments = false
 +++
 
 ## 基本的な DataAsset の使用例

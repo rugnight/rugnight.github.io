@@ -1,15 +1,7 @@
 +++
 title = "[UE C++]Tips"
 date = "2024-10-03T17:57:39+09:00"
-author = ""
-authorTwitter = "" #do not include @
-cover = ""
 tags = ["UnrealEngine"]
-keywords = ["", ""]
-description = ""
-showFullContent = false
-readingTime = false
-hideComments = false
 +++
 
 ## メンバのオブジェクトはTObjectPtrの方が良い

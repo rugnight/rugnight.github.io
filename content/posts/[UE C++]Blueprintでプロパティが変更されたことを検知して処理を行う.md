@@ -1,14 +1,7 @@
 +++
 title = "[UE C++]Blueprintでプロパティが変更されたことを検知して処理を行う"
 date = "2024-10-07T13:05:36+09:00"
-author = ""
-authorTwitter = "" #do not include @
-cover = ""
 tags = ["UnrealEngine"]
-keywords = ["", ""]
-description = ""
-showFullContent = false
-readingTime = false
 hideComments = false
 +++
 
