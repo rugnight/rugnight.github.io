@@ -168,3 +168,9 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
